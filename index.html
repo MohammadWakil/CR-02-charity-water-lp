@@ -5,55 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charity Water</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <div class="hero-container">
-    <!-- Hero Background -->
-    <div class="hero-bg"></div>
+  <div class="hero">
+    <img src="img/5716_Ethiopia_2019_CG-.jpg" alt="Children in classroom" class="hero-bg" />
 
-    <!-- Logo and Brand Name -->
-    <div class="logo-container">
-      <div class="logo">
-        <img src="img/water-can-transparent.png" alt="Charity Water Logo" />
-      </div>
-      <div class="brand-name">CHARITY WATER</div>
-    </div>
+    <div class="overlay">
+      <header class="header">
+        <img src="img/water-can-transparent.png" alt="Charity Water Logo" class="logo" />
+        <span class="brand-name">Charity Water</span>
+      </header>
 
-    <!-- Headline (now bottom-right) -->
-    <div class="headline-container">
-      <div class="headline">
-        Find a well.<br />Fuel a future.
-      </div>
-    </div>
+      <div class="content-group">
+        <h1 class="headline">Fund a well.<br/>Fuel a future.</h1>
 
-    <!-- Donation Box (moved right) -->
-    <div class="donation-container">
-      <div class="donation-box">
-        <a href="#" class="donation-title">Join the Wave of Change</a>
-        <div class="donation-options">
-          <a href="#" class="donation-option">$10 USD/mo</a>
-          <a href="#" class="donation-option">$20 USD/mo</a>
-          <a href="#" class="donation-option">$40 USD/mo</a>
-          <a href="#" class="donation-option">$100 USD/mo</a>
-          <a href="#" class="donation-option" style="width: 100%;">Other Amount</a>
-        </div>
-        <div class="donation-subtext">
-          Your support brings more than clean water. It turns survival into childhood.
+        <div class="donation-box">
+          <button class="cta">Join the Wave of Change</button>
+
+          <div class="donation-options">
+            <button>$10 USD/mo</button>
+            <button>$20 USD/mo</button>
+            <button>$40 USD/mo</button>
+            <button>$100 USD/mo</button>
+            <button>Other Amount</button>
+          </div>
+
+          <p class="message">
+            Your support brings more than clean water. It turns survival into childhood.
+          </p>
         </div>
       </div>
     </div>
   </div>
-
-  <script>
-    document.querySelectorAll('.donation-title, .donation-option').forEach(element => {
-      element.addEventListener('click', function (e) {
-        e.preventDefault();
-        alert('Donation option selected: ' + this.textContent.trim());
-      });
-    });
-  </script>
 </body>
 </html>
